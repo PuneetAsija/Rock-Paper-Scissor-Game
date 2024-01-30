@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    line-height: 2.5em;
+}
+.h1{
+    color: black;
+    font-size: 4em;
+    font-style: italic;
+    height: 5rem;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.choice{
+    height: 160px;
+    width: 160px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.choice:hover{
+    opacity: .5;
+    box-shadow: 10px 20px 50px black;
+}
+img{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius:2em;
+}
+.choices{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 3em;
+    gap: 5em;
+}
+#user-score,#computer-score{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    width: 320px;
+    margin: .5em auto;
+    padding: .4em 1em;
+    border-radius: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+   .h1{
+    font-size: 2em;
+    color: red;
+   }
+   .choice{
+    width: 130px;
+    height: 130px;
+   }
+   #msg{
+    font-size: 1.5em;
+   }
+  }
+  @media only screen and (max-width: 500px) {
+ .choices{
+    gap: 1em;
+ }
+ .score-board{
+    padding: 1em 0;
+ }
+  }
+
+  @media only screen and (max-width: 380px){
+    .choices{
+        gap: .1em;
+    }
+    #msg{
+        width: 230px;
+    }
+    .h1{
+        font-size: 1.5em;
+    }
+    .choice{
+        width: 150px;
+        height: 100px;
+    }
+  }
+  @media only screen and (max-width: 280px){
+    #msg{
+        width: 180px;
+        font-size: 1em;
+    }
+    .score-board{
+        gap: 4em;
+    }
+  }
+  
